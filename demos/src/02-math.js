@@ -13,10 +13,12 @@ function divider(a, b) {
   return a / b;
 }
 function expo(a, b) {
-  return Math.pow(a, b);
+  return a ** b;
 }
 function sqrt(a) {
   if (a < 0) return null;
   return Math.sqrt(a);
 }
-module.exports = { sum, subtraction, multiply, divider, expo, sqrt };
+module.exports = {
+  sum, subtraction, multiply, divider, expo, sqrt,
+};
