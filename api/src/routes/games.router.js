@@ -1,12 +1,12 @@
 const express = require('express');
-const BooksService = require('../services/books.service');
+const GamesService = require('../services/games.service');
 
 const router = express.Router();
-const service = new BooksService();
+const service = new GamesService();
 
 router.get('/', async (req, res) => {
-  const books = await service.getBooks();
-  res.status(200).json(books);
+  const games = await service.getGames();
+  res.status(200).json(games);
 });
 
 router.post('/', async (req, res) => {
